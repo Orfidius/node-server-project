@@ -57,6 +57,14 @@ app.get('/bad', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+
+    res.render('projects.hbs', {
+        pageTitle: 'Home Page',
+        welcomeMessage: 'Projects Page - List of Github Projects'
+    });
+});
+
 
 
 app.listen(port, () => {

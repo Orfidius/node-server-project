@@ -2,12 +2,14 @@
 <html>
 
 {{> head}}
+
 <body>
-   {{> header}}
+{{> header}}
     <div>
-        <p>{{welcomeMessage}}</p>
+        <p>{{ screamIt welcomeMessage}}</p>
+
+      {{> footer}}
     </div>
-    {{> footer}}
 </body>
 
 </html>
